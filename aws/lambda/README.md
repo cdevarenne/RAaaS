@@ -52,7 +52,7 @@ The Lambda functions are deployed as part of the CloudFormation stack. If you ne
 You can use the AWS SAM CLI to test the Lambda functions locally:
 
 1. Install AWS SAM CLI
-2. Create a `template.yaml` file in the `aws/` directory with the function definitions
+2. Create a `template.yaml` file in the `aws/` directory with the function definitions. See documentation at https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/using-sam-cli-local-start-lambda.html
 3. Use `sam local invoke` to test each function:
    ```
    sam local invoke PDFProcessor -e events/s3-put.json
